@@ -25,6 +25,24 @@
 \acrodef{1102}[\textsc{enc~1102}]{Composition II}
 \acrodef{rr}[\textsc{rr}]{Reading Response}
 
+%%%%%%%%%% Adjust for multiple classes
+\newif\ifthreedaysaweek % Used for creating two versions of the portfolio.
+% Use one of these two lines:
+%\threedaysaweektrue 
+\threedaysaweekfalse 
+
+% Use structure inside this comment environment to prepare multiple versions of text:
+\begin{comment}
+	\ifthreedaysaweek
+		This content applies to the MWF class.
+	\else % MW only
+		This content is MW only.
+	\fi
+\end{comment}
+%%%%%%%%%%%%% End multiple Versions content
+
+
+
 
 \title[\textsc{enc}~1102 Syllabus]{Course Syllabus: Composition II}
 \chead{\scriptsize{\fontspec[Numbers=Lining]{Garamond Premier Pro}\MakeUppercase{ENC~1102 Syllabus}}}
@@ -50,7 +68,12 @@
 	\begin{description}[align=right, labelwidth=*, labelindent=0.9in, leftmargin=1in]
 %	\item[Course Title] Composition II
 	\item[Prerequisite] Successful completion of \textsc{enc} 1101 or a passing score on an AP English Exam
-	\item[Meeting]   \textsc{mwf} 15:30–16:20 (\textsc{enc} 1102.0034), \textsc{cb1 301}\newline \textsc{mw} 16:30–17:50 (\textsc{enc} 1102.0013), \textsc{cb1 301}
+	\item[Meeting]
+		\ifthreedaysaweek
+		   \textsc{mwf} 15:30–16:20 (\textsc{enc} 1102.0034), \textsc{cb1 301}
+	\else % Full content
+		\textsc{mw} 16:30–17:50 (\textsc{enc} 1102.0013), \textsc{cb1 301}
+	\fi
 	\item[Term] Fall 2013
 	\vspace{0.5\baselineskip} \hrule \vspace{0.5\baselineskip}
 	\item[Instructor] Christopher R. Friend
@@ -98,14 +121,18 @@ Through successful completion of this course and its activities, you should be a
 	\item Required
 	\begin{enumerate}
 		\item \citeauthor{greene:2008aa}, \citetitle{greene:2008aa}\\ (\textsc{isbn} \href{http://www.worldcat.org/search?q=978-0-312-60140-9}{978-0-312-60140-9}) %(Bring to class each day.)
-		\item \citeauthor{lunsford:2010aa}, \citetitle{lunsford:2010aa}, \emph{Fourth Edition}\\ (\textsc{isbn} \href{http://www.worldcat.org/search?q=978-0-312-66486-2}{978-0-312-66486-2})%(Bring only when requested.)
+		\item \citeauthor{lunsford:2014aa}, \citetitle{lunsford:2014aa}, either
+		\begin{itemize}
+			\item the brand-new \emph{Fifth Edition} (\textsc{isbn} 978-1-4576-6439-7) or
+			\item the \emph{Fourth Edition} (\textsc{isbn} \href{http://www.worldcat.org/search?q=978-0-312-66486-2}{978-0-312-66486-2})%(Bring only when requested.)
+		\end{itemize} 
 		\item Reliable connection to the Internet. Make a plan for where you will go if your device or connection dies.
 		\item Automated, reliable backup system. Every semester, I have a student who loses everything due to a hard drive failure. Don't be that student.
 		\item Regular access to your \href{http://www.outlook.com/knights.ucf.edu}{Knights Mail account}. I check my account multiple times per day and will almost always reply within one business day. You should to check yours \emph{at least} once per day, but definitely before each class meeting. (Why not set it up on your phone?)
 	\end{enumerate}
 	\item Recommended
 	\begin{enumerate}
-		\item Google account connected to your \href{http://webcourses2c.instructure.com}{Webcourses} (Canvas) account\footnote{You can connect the two using the Settings link in the top-right corner of \href{http://webcourses2c.instructure.com}{Webcourses}.}. This helps make collaboration a breeze.
+		\item Google account connected to your \href{http://webcourses2c.instructure.com}{Webcourses} account\footnote{You can connect the two using the Settings link in the top-right corner of \href{http://webcourses2c.instructure.com}{Webcourses}.}. This helps make collaboration a breeze.
 		\item Dropbox account into which you store all your work. This takes care of backups.
 		\item Your own computer running a full (non-mobile) operating system. Some of the work we do is much simpler with new software and the ability to run multiple programs simultaneously. Phones are too limited, and iPads get frustrating\footnote{Various computer labs across campus, or the loaner machines at the library, can work in a pinch.}.
 	\end{enumerate}
@@ -319,12 +346,17 @@ This assignment combines the major assignments listed above into a single docume
 %\begin{comment} %%%%%%%%%%%%%%%%%%%%%%% Calendar
 
 
-\section{Course Sequence}
-\xentrystretch{0.25}
+%\begin{landscape}
+%\clearpage
+%\addtocounter{page}{-2}
+\section{Course Calendar}
+%\addtocounter{page}{-1} %accommodates the blank page before Calendar
+%\begin{center}
 {\centering\footnotesize %brace balanced at end of calendar
-\tablehead{\toprule\textbf{\textsc{Unit}} & \textbf{\textsc{Week}} & \textbf{\textsc{Task}} & \textbf{\textsc{Destination}}\\}
-\tablelasthead{\toprule\textbf{\textsc{Unit}} & \textbf{\textsc{Week}} & \textbf{\textsc{Task}} & \textbf{\textsc{Destination}}\\}
-\begin{mpxtabular}{>{\bfseries}p{0.75in}cp{2.5in}p{1.05in}} % for portrait
+%\vspace{-1in}
+\tablehead{\toprule\textbf{\textsc{Unit}} & \textbf{\textsc{Week}} & \textbf{\textsc{Date}} & \textbf{\textsc{Readings/Homework\newline(Before Class)}} & \textbf{\textsc{Guiding Question\newline(During Class)}}\\}
+\tablelasthead{\toprule\textbf{\textsc{Unit}} & \textbf{\textsc{Week}} & \textbf{\textsc{Date}} & \textbf{\textsc{Readings/Homework\newline(Before Class)}} & \textbf{\textsc{Guiding Question\newline(During Class)}}\\}
+\begin{mpxtabular}{>{\bfseries}p{0.75in}ccp{1.8in}p{1.85in}} % for portrait
 %\begin{xtabular}{>{\bfseries}lccp{2.25in}p{3.25in}} % for landscape
 \midrule
 %	\toprule\textbf{\textsc{Topic(s)}} & \textbf{\textsc{Week}} &\textbf{\textsc{Class Discussion}} & \textbf{\textsc{Readings/Homework}}\\
@@ -334,11 +366,18 @@ This assignment combines the major assignments listed above into a single docume
 
 
 
+	\ifthreedaysaweek
+		\input{calendar-mwf.tex}
+	\else % MW only
+		\input{calendar-mwonly.tex}
+	\fi
 
 
 
 
- 	\bottomrule
+
+
+	\bottomrule
     \end{mpxtabular}
 } %matches the \footnotesize at top of calendar
 %    \end{center}
@@ -346,16 +385,17 @@ This assignment combines the major assignments listed above into a single docume
 
   
 \subsection{Changes}
-    Material in the preceding schedule is subject to change at the discretion of the instructor.  Students will be notified of any changes in \href{https://webcourses2c.instructure.com/courses/985581}{Webcourses}. Ensure your \href{https://webcourses2c.instructure.com/courses/985581}{Webcourses} profile notifies you appropriately of class activity.
+    Material in the preceding schedule is subject to change at the discretion of the instructor.  Students will be notified of any changes in \href{https://webcourses2c.instructure.com/courses/985581}{Webcourses}. Ensure your \href{https://webcourses2c.instructure.com/courses/985581}{Webcourses} settings notify you appropriately of class activity.
 %    \end{landscape}
 
 \subsection{Final Exams} % (fold)
 \label{sub:final_exams}
-Because this class includes a portfolio that documents your progress over the semester, as well as a project you create as a result, there is no final exam as such. However, since your portfolio is the only document actually graded, it serves as a Really Big Deal™ and should be treated with as much attention as an exam. Your final projects are due by the beginning of your exam period, during which you will present your work to an audience of your peers. These presentations will be held in the regular classroom at these times:
-\begin{itemize}
-	\item 16:30 class: Monday, 09 December 2013, 16:00–18:50
-	\item 15:30 class: Friday, 06 December 2013, 13:00–15:50
-\end{itemize}
+Because this class includes a portfolio that documents your progress over the semester, as well as a project you create as a result, there is no final exam as such. However, since your portfolio is the only document actually graded, it serves as a Really Big Deal™ and should be treated with as much attention as an exam. Your final projects are due by the beginning of your exam period, during which you will present your work to an audience of your peers. These presentations will be held in the regular classroom at the University-assigned time:
+	\ifthreedaysaweek
+		\textbf{Friday, 06 December 2013, 13:00–15:50}
+	\else % MW only
+		\textbf{Monday, 09 December 2013, 16:00–18:50}
+	\fi
 % subsection final_exams (end)
   
 
@@ -438,7 +478,7 @@ Students at \ac{ucf} are expected to act with integrity, in terms of both classr
 In an effort to protect the integrity of your work and ensure it is not re-used by others later, your instructor may ask that your assignments be submitted to Turnitin.com by their deadlines.
 %\todo{Am I sure? Do I want to do this? Can it be integrated with \href{http://webcourses2c.instructure.com}{Webcourses}?}  
 
-In this course, we will be discussing the use of outside texts for writing in and out of the classroom, specifically the use of source documentation/citation/attribution. If you have questions about correct documentation of sources, consult a writing handbook (such as \citetitle{lunsford:2010aa} by Andrea Lunsford), the style guide for the citation system you are using (such as \citetitle{gibaldi:2009aa} by Joseph \citeauthor{gibaldi:2009aa}), the \ac{uwc} (see Section~\ref{ssub:uwc}), or your instructor during office hours. Use of outside sources without proper credit, turning in work that is not your own, or assisting others to do either are each considered plagiarism and are subject to the above consequences.
+In this course, we will be discussing the use of outside texts for writing in and out of the classroom, specifically the use of source documentation/citation/attribution. If you have questions about correct documentation of sources, consult a writing handbook (such as \citetitle{lunsford:2014aa} by Andrea Lunsford), the style guide for the citation system you are using (such as \citetitle{gibaldi:2009aa} by Joseph \citeauthor{gibaldi:2009aa}), the \ac{uwc} (see Section~\ref{ssub:uwc}), or your instructor during office hours. Use of outside sources without proper credit, turning in work that is not your own, or assisting others to do either are each considered plagiarism and are subject to the above consequences.
 
 \subsection{Accommodations}
 At \ac{ucf}, we are committed to providing reasonable accommodations for all persons with disabilities. Students with disabilities who need accommodations in this course must contact the instructor at the beginning of the semester to discuss needed accommodations. No accommodations will be provided until the student has 1) registered with Student Disability Services (\textsc{fc-g} 185, phone 407-823-2371, or \textsc{tty/tdd} 407-823-2116), and 2) met with the instructor to request accommodations.
@@ -464,34 +504,3 @@ For the purposes of conducting research or improving his teaching practices, you
 \end{document}
 
 
-
-
-
-
-
-OLD CALENDAR DATA BELOW. USED FOR MPXTAB, WHICH SUMMER TERM DOESN'T NEED
-
-%\begin{landscape}
-%\clearpage
-%\addtocounter{page}{-2}
-\section{Course Calendar}
-%\addtocounter{page}{-1} %accommodates the blank page before Calendar
-%\begin{center}
-{\centering\footnotesize %brace balanced at end of calendar
-%\vspace{-1in}
-\tablehead{\toprule\textbf{\textsc{Unit}} & \textbf{\textsc{Week}} & \textbf{\textsc{Task}} & \textbf{\textsc{Destination}}\\}
-\tablelasthead{\toprule\textbf{\textsc{Unit}} & \textbf{\textsc{Week}} & \textbf{\textsc{Task}} & \textbf{\textsc{Destination}}\\}
-\begin{mpxtabular}{>{\bfseries}p{0.75in}cp{2in}p{1.25in}} % for portrait
-%\begin{xtabular}{>{\bfseries}lccp{2.25in}p{3.25in}} % for landscape
-\midrule
-%	\toprule\textbf{\textsc{Topic(s)}} & \textbf{\textsc{Week}} &\textbf{\textsc{Class Discussion}} & \textbf{\textsc{Readings/Homework}}\\
-
-% Do not edit manually. Paste content in from Calendar Workfile. (Numbers document, this folder.)
-
-
-
-
- 	\bottomrule
-    \end{mpxtabular}
-} %matches the \footnotesize at top of calendar
-%    \end{center}
