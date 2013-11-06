@@ -1,9 +1,9 @@
-\documentclass[10pt,oneside]{amsart}	%defines this as an article
+\documentclass[10pt]{amsart}	%defines this as an article
 \usepackage{chrisfriend-comp} %provides formatting declarations for page, headers, figures, textcolor, comments, and bibliographic styles
 \usepackage{chrisfriend-OTF-support} %provides support for OTF system fonts; incompatible with latex, rtf2latex, & ht4latex
 %\usepackage[utf8]{inputenc} %support for smallamp?
 
-\usepackage{draftwatermark}
+%\usepackage{draftwatermark}
 
 %\usepackage{tabularx}
 \usepackage{tabulary} % allows for the tables I make rubrics with
@@ -23,16 +23,18 @@
 %\bibliographystyle{abbrv}
 \thispagestyle{empty}
 
-\vspace{-2in}
+%\twocolumn[
+\vspace{-3in}
 \begin{center}
 \huge
-\includegraphics[height=1.5\baselineskip]{pegasus.pdf}
+{\includegraphics[height=1.5\baselineskip]{pegasus.pdf}}
 
 \textbf{Assignment Sheet: Primary Research Report}
 
 {\normalsize Chris Friend • \textsc{enc1102} • Fall 2013}
 \end{center}
-\vspace{1.5\baselineskip}
+\vspace{\baselineskip}
+%] %Use for column-spanning the title
 
 \section{Background and Purpose} % (fold)
 \label{sec:background}
@@ -46,20 +48,20 @@ For this assignment, the hard work happens before you start writing---creating t
 \begin{comment}
 	In brief, you need to accomplish these tasks before you can write the report:
 	\begin{enumerate}
-		\item Brainstorm some of the people who might be the most interested in your research question or problem. Choose one or two of these groups of stakeholders to focus on as a possible audience for your final project. (In short, who cares about your opinions? Whom do you need to persuade?)
+		\item Brainstorm some of the people who might be the most interested in or affected by the implications of your research question. Choose one or two of these groups of stakeholders to focus on as a possible audience for your final project. (In short, who cares about your opinions? Whom do you need to convince to take what kind of action?)
 		\item Determine the “genre sets” used by that group of stakeholders. (How do those people communicate? What persuades them?)
-		\item Analyze the characteristics of one genre used by your stakeholder. Determine what you need to know to be able to competently write in it for your final project. (Create a genre memo in a group of your peers who chose the same genre.)
+		\item Analyze the characteristics of one genre used by your stakeholder. Determine what you need to know to be able to competently use that genre to get your stakeholders to take action.
 		\item Conduct original research to add to the current knowledge on the topic.
-		\item Analyze the data you collect and present it meaningfully to an audience with little familiarity with your topic (i.e. your peers).
+		\item Analyze the data you collect so you can present it meaningfully to an audience with limited familiarity with your topic (i.e. your instructor).
 	\end{enumerate}
 \end{comment}
 
 \subsection{Stakeholder Analysis} % (fold)
 \label{sub:stakeholder_analysis}
-Write an analysis (likely around 500 words) in which you outline all the stakeholders you have considered for your research interests. Then, conduct a more focused analysis of one or two of those groups of stakeholders that you believe would best benefit from your research findings. Consider questions such as these:
+Write an analysis (likely ≥500 words) in which you outline all the stakeholders you have considered for your research interests. Then, conduct a more focused analysis of one or two of those groups of stakeholders that you believe would best benefit from your research findings. Consider questions such as these:
 	\begin{itemize}
 		\item What makes each individual or group a stakeholder in this topic?
-		\item  What is their particular interest in the problem or question you are researching?
+		\item  How are they relevant to or involved with the question you are researching?
 		\item  What can they do in response to your findings/proposals/ideas?
 	\end{itemize}
 % subsection stakeholder_analysis (end)
@@ -67,7 +69,7 @@ Write an analysis (likely around 500 words) in which you outline all the stakeho
 \subsection{Genre Analysis} % (fold)
 \label{sub:genre_analysis}
 Consider the environment of the stakeholders you identified in your \nameref{sub:stakeholder_analysis}. Analyze how writing works in that environment to help exchange or receive information. To avoid guessing, you likely need to conduct interviews %\footnote{See Greene \& Lidinsky pp. 307--310 for guidance on conducting effective interviews.}
-and collect samples of unfamiliar texts from members of your stakeholder group. This is an opportunity to ``get your hands dirty'' for your research. Then, write a two- to three-page analysis of their methods of written communication.
+and collect samples of unfamiliar texts from members of your stakeholder group. This is an opportunity to ``get your hands dirty'' for your research. Then, write an analysis (likely ≥500 words) of their methods of written communication.
 	\begin{enumerate} % For concise print version, change to "comment". For extended online version, use "enumerate".
 		\item  Identify the ``genre sets'' used by the primary group of stakeholders you focused on in your analysis. Consider questions such as these:
 		\begin{itemize}
@@ -112,13 +114,14 @@ Demonstrate your ability to \emph{analyze} in this document. Show that you have 
 
 \begin{table}[b]
 	\caption{Evaluation of Primary Research Report}\label{tab:rubric}
+	\small
 \begin{tabulary}{\textwidth}{rLLL}
 	\toprule  & \textbf{\textsc{Stakeholders}} 
 	& \textbf{\textsc{Genres}}
 	& \textbf{\textsc{Collected Data}}
 	\\
 \midrule	\textbf{Excellent} 
-& Confidently navigates field of stakeholders; selects based on definitive evidence; clearly relates to research 
+& Confidently navigates possible stakeholders; explains reason for selection; clearly relates to research 
 & Thoroughly evaluates potential implications \& effectiveness of genre in context of research
 & Provides analysis of collected data that contributes to research and convincingly situates results
 \\
@@ -128,7 +131,7 @@ Demonstrate your ability to \emph{analyze} in this document. Show that you have 
 & Reports results of appropriate and legitimate research; implications may be weak or unclear
 \\
 \midrule	\textbf{Poor} 
-& Omits or oversimplifies discussion of options; fails to place in context of research 
+& Omits or oversimplifies options; fails to place results in context 
 & Identifies potential genre but does not justify or analyze
 & Questionable data collection; may not address original question
 \\
