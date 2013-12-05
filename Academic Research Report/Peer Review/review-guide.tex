@@ -1,0 +1,116 @@
+%% For help on available commands, see the following documentation files, available at CTAN (http://www.ctan.org/).
+%%    usepackage{acronym, babel, biblatex, biblatex-apa, biblatex-apa-test, booktabs, calc, color, comment, csquotes, datetime, docmute, fontspec, footmisc, geometry, graphicx, hyperref, ifxetex, inputenc, isodateo, lineno, longtable, memman, mparhack, multirow, nameref, paralist, siunitx, suffix, svn-multi, todonotes, ulem, xcolor, xltxtra, xtab, xunicode}
+%%
+%% Available options to the eyerdoc-common style include:
+%%	apa		uses APA6-like citations and references (one of apa or mla must be specified)
+%%	mla		uses MLA6-like citations and references elements (one of apa or mla must be specified)
+%%	nosvn	operates without subversion versian control features
+%%  strict	uses strict apa or mla geometry and design elements
+%% Additionally, the eyerdoc-common style requires the memoir class and uses its article, draft, and final options
+%% For more information about the eyerdoc styles, see http://www.eyer.us/eyerdoc
+%%
+
+% Preamble and document properties (fold)
+\documentclass[10pt,article,oneside]{memoir}
+\usepackage[apa,nosvn]{eyerdoc-common} % for information on eyerdoc packages, see http://www.eyer.us/eyerdoc
+\usepackage{eyerdoc-chrisfriend-fonts}
+\bibliography{bibliography}
+\input{acronyms}
+\usepackage{fullpage}
+
+\author{Friend's 1102 Classes}
+\briefauthor{Friend}
+\institution{Spring 2013}
+\title{Research Paper Review}% use \par to break long titles
+\runninghead{Research Paper Review}% this is used in running headers and in pdf metadata
+%\date{\printdate{2013-04-17}}
+% Preamble and document properties (end)
+
+\begin{document} % start of document (fold)
+% frontmatter (fold)
+
+\settitle % sets the document title and other relevant information
+
+%\begin{abstract}
+%	Place abstract text here...
+%\end{abstract}
+
+\settitle % sets the title after the title page when applicable
+%\setlistoftodos% sets list of \todos; automatically disabled when memoir class is called with final option
+%\settableofcontents% sets table of contents
+%\setlistoftables% sets list of tables
+%\setlistoffigures% sets list of figures
+
+% frontmatter (end)
+
+Check for the following in each research paper. The section titles below aren't required, but they are traditional for this genre. Regardless of section headings, you should ``feel'' the transition from one purpose to another as you read through the paper.
+
+\begin{multicols}{2}
+\begin{compactitem}
+	\item \textbf{Title}
+	\begin{compactitem}
+		\item Does the title indicate both the topic and the aspect being discussed?
+		\item Would the title benefit from a ``medial colon'', starting with a very brief or catchy phrase and continuing with a statement of what's being explored in the research?\footnote{Examples from \href{https://twitter.com/academictitles}{@academictitles} on Twitter. Yes, that actually exists. And yes, it's rather funny.}
+		\begin{compactitem}
+			\item ``Hyde and Sikh: Literary Dualism in Sub-Continental Religions''
+			\item ``(You Were) Right About Mao, Funk Soul Brother: Predicting the Interpretation of Zedong's Legacy Through 1970's Blacksploitation Films''
+			\item ``Fluoxeteenage Mutant Ninja Turtles: Success Rates of Generic Anti-Depressants for Amphibious Crime Fighters''
+			\item ``Feminism Ain't Funny: Woman as `Fun-Killer,' Mother as Monster in the American Sitcom''
+			\item ``iLess in Gaza: Apple, Hegemony and the loss of corporate control in Palestine''
+			\item ``Seder? I Hardly Knew Her! Examining the Historical Roots of the Comic Pun in the 1st Book of the Tanakh''
+			\item ``It's Not a Table for One---I'm Leaving it for Elijah: The Passover Guide to Dining Out Alone''
+		\end{compactitem}
+	\end{compactitem}
+	\item \textbf{Introduction}
+	\begin{compactitem}
+		\item What do other researchers currently think about the topic of this paper?
+		\item How does the author's new research fit in with the existing work?
+		\begin{compactitem}
+			\item extends what they started
+			\item challenges what they concluded
+			\item answers what they asked for
+			\item confirms/echoes what they found
+		\end{compactitem}
+		\item Do you know what the author hopes to do with the paper? (In other words, where is the thesis?)
+	\end{compactitem}\columnbreak
+	\item \textbf{Methodology}
+	\begin{compactitem}
+		\item Does the author explain how the new research was conducted?
+		\item Do you know why the author chose that approach? Is it a valid reason?
+		\item Do you know what kinds of people were chosen to participate?
+		\item Do you know why those people were chosen? Is it a valid choice?
+	\end{compactitem}
+	\item \textbf{Results}
+	\begin{compactitem}
+		\item Does the author show evidence of results through quotes, statistics, etc.?
+		\item Are the results presented in a useful and readable manner, or are they jumbled or monotonous?
+		\item Do the results align with the author's goal from the Intro §?
+		\item Does the author help you make sense of the results, or is it up to you?
+		\item Does the author highlight the important, surprising, or expected results, or are they all treated equally?
+	\end{compactitem}
+	\item \textbf{Discussion}
+	\begin{compactitem}
+		\item Does the author explain why the findings from the Results § are important?
+		\item What changes, actions, or next steps does the researcher suggest?
+		\begin{compactitem}
+			\item Fix a problem by…
+			\item Adjust a plan so that…
+			\item Stop/start doing such-and-such.
+			\item Think of such-and-such in a different way.
+			\item Ask so-and-so to start/stop…
+		\end{compactitem}
+		\item Are you left feeling convinced?
+		\item Does the end address the concerns of the Intro §?
+		\item Is the initial research question addressed? (It needn't be \emph{answered}, but it must be \emph{addressed}.)
+	\end{compactitem}
+\end{compactitem}
+\end{multicols}
+
+% backmatter (fold)
+
+%\setappendix*% begins alphabetic section numbering and prints "Appendi(x|ces)"; starred command prints nothing
+%\setreferences % typesets the reference list; if no references are used, the list will not be typeset
+
+% backmatter (end)
+
+\end{document} % (end)
